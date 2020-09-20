@@ -10,8 +10,15 @@ class DatosPersonales : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_personales)
 
-        val objetoIntent: Intent =intent
+        val objetoIntent: Intent=intent
         var Nombre = objetoIntent.getStringExtra("Nombre")
-        txtNombre.text = "Nombre Completo $Nombre"
+        var Apellido = objetoIntent.getStringExtra("Apellido")
+        txtNombre.text = "Nombre Completo $Nombre $Apellido"
+        var SexoM = objetoIntent.getStringExtra("Sexo")
+        txtSexo.text = "Sexo $SexoM"
+        var SexoF = objetoIntent.getStringExtra("Sexo")
+        txtSexo.text = "Sexo $SexoF"
+        var Fecha = objetoIntent.getStringExtra("Fecha")
+        txtFech.text = "Fecha $Fecha"
     }
 }

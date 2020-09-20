@@ -34,8 +34,16 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         btnSiguiente.setOnClickListener {
             var Nombre:String = editTextTextPersonName.text.toString()
+            var Apellido:String = editTextTextPersonName2.text.toString()
+            var Masculino:String = radioSexMas.text.toString()
+            var Femenino:String = radioSexFem.text.toString()
+            var fecha:String = txtCalendar.text.toString()
             val intent:Intent = Intent(this, DatosPersonales::class.java)
             intent.putExtra("Nombre", Nombre)
+            intent.putExtra("Apellido", Apellido)
+            intent.putExtra("Sexo",Masculino)
+            intent.putExtra("Sexo",Femenino)
+            intent.putExtra("Fecha",fecha)
             startActivity(intent)
         }
 
