@@ -32,6 +32,13 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         spinner?.adapter = arrayAdapter
         spinner?.onItemSelectedListener = this
 
+        btnSiguiente.setOnClickListener {
+            var Nombre:String = editTextTextPersonName.text.toString()
+            val intent:Intent = Intent(this, DatosPersonales::class.java)
+            intent.putExtra("Nombre", Nombre)
+            startActivity(intent)
+        }
+
       
     }
 
