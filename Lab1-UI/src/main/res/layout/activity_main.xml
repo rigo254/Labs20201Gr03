@@ -30,7 +30,7 @@
         android:hint="Nombres"
         android:drawableLeft="@drawable/ic_outline_account_box_24"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -44,7 +44,7 @@
         android:drawableLeft="@drawable/ic_baseline_account_box_242"
         android:ems="10"
         android:hint="Apellidos"
-        android:inputType="textPersonName"
+        android:inputType="textCapSentences"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
